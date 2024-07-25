@@ -51,32 +51,6 @@ A simple photo gallery application built with React that loads random images fro
 - Click on any image to view it in a larger size.
 - The footer contains a link to the Lorem Picsum website, where the images are sourced from.
 
-## File Structure
-
-photo-gallery/
-│
-├── public/
-│ ├── index.html
-│ └── ...
-│
-├── src/
-│ ├── components/
-│ │ ├── ImageGrid.js
-│ │ ├── ImageModal.js
-│ │ └── ...
-│ ├── App.js
-│ ├── App.css
-│ ├── index.js
-│ └── ...
-│
-├── .gitignore
-├── package.json
-├── README.md
-└── ...
-## Contributing
-
-Contributions are welcome! If you have any ideas, suggestions, or bug fixes, please feel free to create a pull request or open an issue.
-
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
