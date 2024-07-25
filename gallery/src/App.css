@@ -1,0 +1,120 @@
+body {
+  background-color: #f0f0f5; /* Fundo mais agradável */
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.image-wrapper {
+  margin-bottom: 20px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Colunas dinâmicas */
+  gap: 10px; /* Espaço entre as imagens */
+  padding: 20px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 150px; /* Fixar a altura para manter quadrados */
+}
+
+.image-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e0e0; /* Cor de fundo do espaço de carregamento */
+  color: #aaa; /* Cor do texto de carregamento */
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+.image-item {
+  width: 100%;
+  height: 150px; /* Fixar a altura para manter quadrados */
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.image-item:hover {
+  transform: scale(1.05);
+}
+
+.image-item.loaded {
+  opacity: 1;
+}
+
+.load-more {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.load-more:hover {
+  background-color: #0056b3;
+}
+
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.footer p {
+  margin: 0;
+}
